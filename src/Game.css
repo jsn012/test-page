@@ -1,7 +1,3 @@
-main {
-  padding: 10px;
-}
-
 /* Game.js */
 .game-list ul {
   display: flex;
@@ -25,10 +21,27 @@ main {
   text-align: center;
 }
 
+/* GameMain.js */
+.game-main {
+  margin-top: 56px;
+}
+
 /* GameInfo.js */
-.game-info .game-icon {
-  width: 120px;
-  height: 120px;
+.game-info .game-img_main {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.game-info .game-info__inner {
+  padding: 16px;
+}
+
+.game-info .game-info__inner .game-icon {
+  width: 100px;
+  height: 100px;
   background-size: 100%;
   margin: 0 auto;
   border-radius: 26px;

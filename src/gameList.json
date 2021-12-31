@@ -11,11 +11,11 @@
     "releaseJp": 1,
     "releaseEn": 1,
     "img": [
-      "/img/game/info/arknights-info-1.jpg",
-      "/img/game/info/arknights-info-2.jpg",
-      "/img/game/info/arknights-info-3.jpg",
-      "/img/game/info/arknights-info-4.jpg",
-      "/img/game/info/arknights-info-5.jpg"
+      "/game/info/arknights-info-1.jpg",
+      "/game/info/arknights-info-2.jpg",
+      "/game/info/arknights-info-3.jpg",
+      "/game/info/arknights-info-4.jpg",
+      "/game/info/arknights-info-5.jpg"
     ],
     "info": "파국을 향해 치닫는 '로도스 아일랜드'와 '리유니온', 서로 다른 내일을 꿈꾸는 두 세력의 처절한 드라마가 지금 바로 펼쳐진다!",
     "video": "https://www.youtube.com/embed/Sv5s0pybxI0",
@@ -56,12 +56,12 @@
     "releaseJp": 0,
     "releaseEn": 0,
     "img": [
-      "/img/game/info/burstwitch-info-6.jpg",
-      "/img/game/info/burstwitch-info-1.jpg",
-      "/img/game/info/burstwitch-info-2.jpg",
-      "/img/game/info/burstwitch-info-3.jpg",
-      "/img/game/info/burstwitch-info-4.jpg",
-      "/img/game/info/burstwitch-info-5.jpg"
+      "/game/info/burstwitch-info-6.jpg",
+      "/game/info/burstwitch-info-1.jpg",
+      "/game/info/burstwitch-info-2.jpg",
+      "/game/info/burstwitch-info-3.jpg",
+      "/game/info/burstwitch-info-4.jpg",
+      "/game/info/burstwitch-info-5.jpg"
     ],
     "info": "최초에, 세계는 암흑에 싸여 있었다. 암흑이 탄생하고 부터, 암흑을 찢어버리는 힘을 빛이라고 불렀다. 빛과 암흑이 서로 부딪히면서 생긴 부스러기들로 인해서 혼돈이 생성 되었고, 혼돈, 그의 배고픔은 모든것을 집어 삼켜 세계를 다시 암흑으로 돌려놨다. 신들은 천계로 돌아가고, 남아있던 희미한 빛들까지 모두 소멸 되었다. 세상이 종멸을 향해 가던 도중, 사람들은 드디어 그 오래된 예언을 떠올렸다:<br>신의 아들은 결국 심연을 멸망하고 그의 아버지의 자리를 대신 할것이다...",
     "video": "https://www.youtube.com/embed/iGHpD3uGQII",
@@ -102,11 +102,11 @@
     "releaseJp": 2,
     "releaseEn": 2,
     "img": [
-      "/img/game/info/soultide-info-1.jpg",
-      "/img/game/info/soultide-info-2.jpg",
-      "/img/game/info/soultide-info-3.jpg",
-      "/img/game/info/soultide-info-4.jpg",
-      "/img/game/info/soultide-info-5.jpg"
+      "/game/info/soultide-info-1.jpg",
+      "/game/info/soultide-info-2.jpg",
+      "/game/info/soultide-info-3.jpg",
+      "/game/info/soultide-info-4.jpg",
+      "/game/info/soultide-info-5.jpg"
     ],
     "info": "마녀로부터 세상을 구하려는 특별한 인형들의 이야기",
     "video": "https://www.youtube.com/embed/xuS2MwnfaLU",
@@ -147,14 +147,14 @@
     "releaseJp": 0,
     "releaseEn": 0,
     "img": [
-      "/img/game/info/projectsnow-info-1.jpg",
-      "/img/game/info/projectsnow-info-2.jpg",
-      "/img/game/info/projectsnow-info-3.jpg",
-      "/img/game/info/projectsnow-info-4.jpg",
-      "/img/game/info/projectsnow-info-5.jpg",
-      "/img/game/info/projectsnow-info-6.jpg",
-      "/img/game/info/projectsnow-info-7.jpg",
-      "/img/game/info/projectsnow-info-8.jpg"
+      "/game/info/projectsnow-info-1.jpg",
+      "/game/info/projectsnow-info-2.jpg",
+      "/game/info/projectsnow-info-3.jpg",
+      "/game/info/projectsnow-info-4.jpg",
+      "/game/info/projectsnow-info-5.jpg",
+      "/game/info/projectsnow-info-6.jpg",
+      "/game/info/projectsnow-info-7.jpg",
+      "/game/info/projectsnow-info-8.jpg"
     ],
     "info": "무엇이 버려진 사람들을 구할 수 있을까? 과학일까, 신일까, 아니면...",
     "video": "https://www.youtube.com/embed/afrNZdBopV8",
@@ -195,12 +195,12 @@
     "releaseJp": 0,
     "releaseEn": 0,
     "img": [
-      "/img/game/info/toweroffantasy-info-1.jpg",
-      "/img/game/info/toweroffantasy-info-2.jpg",
-      "/img/game/info/toweroffantasy-info-3.jpg",
-      "/img/game/info/toweroffantasy-info-4.jpg",
-      "/img/game/info/toweroffantasy-info-5.jpg",
-      "/img/game/info/toweroffantasy-info-6.jpg"
+      "/game/info/toweroffantasy-info-1.jpg",
+      "/game/info/toweroffantasy-info-2.jpg",
+      "/game/info/toweroffantasy-info-3.jpg",
+      "/game/info/toweroffantasy-info-4.jpg",
+      "/game/info/toweroffantasy-info-5.jpg",
+      "/game/info/toweroffantasy-info-6.jpg"
     ],
     "info": "2712년, 당신은 아이다성 황무지에서 조난당하여 의식을 잃었습니다... 이어지는 이야기는 당신들이 쓰기를 기다립니다.",
     "video": "https://www.youtube.com/embed/P0OES0A8vZU",
@@ -241,11 +241,11 @@
     "releaseJp": 0,
     "releaseEn": 0,
     "img": [
-      "/img/game/info/starrail-info-1.jpg",
-      "/img/game/info/starrail-info-2.jpg",
-      "/img/game/info/starrail-info-3.jpg",
-      "/img/game/info/starrail-info-4.jpg",
-      "/img/game/info/starrail-info-5.jpg"
+      "/game/info/starrail-info-1.jpg",
+      "/game/info/starrail-info-2.jpg",
+      "/game/info/starrail-info-3.jpg",
+      "/game/info/starrail-info-4.jpg",
+      "/game/info/starrail-info-5.jpg"
     ],
     "info": "여정의 끝이 뭇별에 닿길",
     "video": "https://www.youtube.com/embed/bfQdJcVeVTI",
@@ -286,10 +286,10 @@
     "releaseJp": 0,
     "releaseEn": 0,
     "img": [
-      "/img/game/info/prometheus-info-1.jpg",
-      "/img/game/info/prometheus-info-2.jpg",
-      "/img/game/info/prometheus-info-3.jpg",
-      "/img/game/info/prometheus-info-4.jpg"
+      "/game/info/prometheus-info-1.jpg",
+      "/game/info/prometheus-info-2.jpg",
+      "/game/info/prometheus-info-3.jpg",
+      "/game/info/prometheus-info-4.jpg"
     ],
     "info": "당신은 세상이 영원하다는 것을 믿으십니까?",
     "video": "https://www.youtube.com/embed/WBG6CVnX84w",
@@ -330,11 +330,11 @@
     "releaseJp": 0,
     "releaseEn": 0,
     "img": [
-      "/img/game/info/neuralcloud-info-1.jpg",
-      "/img/game/info/neuralcloud-info-2.jpg",
-      "/img/game/info/neuralcloud-info-3.jpg",
-      "/img/game/info/neuralcloud-info-4.jpg",
-      "/img/game/info/neuralcloud-info-5.jpg"
+      "/game/info/neuralcloud-info-1.jpg",
+      "/game/info/neuralcloud-info-2.jpg",
+      "/game/info/neuralcloud-info-3.jpg",
+      "/game/info/neuralcloud-info-4.jpg",
+      "/game/info/neuralcloud-info-5.jpg"
 
     ],
     "info": "경고! 치명적인 오류가 발생했습니다: 시스템 무결성이 심각하게 파손됐습니다...",
