@@ -1,0 +1,35 @@
+main {
+  padding: 10px;
+}
+
+/* Game.js */
+.game-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  transition: max-height 1s;
+}
+
+.game-list ul li button {
+  margin: 2px;
+  padding: 4px 10px;
+  border: none;
+}
+
+.game-list ul li button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.game-list .list-open_btn {
+  text-align: center;
+}
+
+/* GameInfo.js */
+.game-info .game-icon {
+  width: 120px;
+  height: 120px;
+  background-size: 100%;
+  margin: 0 auto;
+  border-radius: 26px;
+}

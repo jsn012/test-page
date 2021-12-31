@@ -1,0 +1,21 @@
+/* Header */
+header {
+  height: 60px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 10px 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Footer */
+footer {
+  height: 100px;
+  background-color: #ccc;
+}
