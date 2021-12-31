@@ -51,7 +51,7 @@ function GameList() {
   let numList = [];
 
   const btnClick = (e) => {
-    navigate(`/game/info/${e.target.value}`);
+    navigate(`/test-page/game/info/${e.target.value}`);
     if (listOpenCheck === true) {
       setHeight(0);
       setOpenBtnIcon(btnIconC);

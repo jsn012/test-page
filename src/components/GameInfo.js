@@ -9,7 +9,7 @@ function GameInfo() {
   const navigate = useNavigate();
 
   const btnClick = () => {
-    navigate('/game/main')
+    navigate('/test-page/game/main')
   };
 
   const gameIcon = {

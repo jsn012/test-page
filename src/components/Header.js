@@ -6,7 +6,7 @@ import '../Header.css'
 function Header() {
   const navigate = useNavigate();
   const titleClick = () => {
-    navigate('/')
+    navigate('/test-page')
   };
 
   return(
