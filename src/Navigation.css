@@ -6,6 +6,7 @@ nav {
   color: #000;
   position: fixed;
   top: 0;
+  z-index: 200;
 }
 
 .nav__inner {
@@ -26,7 +27,7 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 31px;
-  background-color: #0000009f;
+  background-color: #00000091;
 }
 
 .back-btn { margin-left: 16px; }

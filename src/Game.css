@@ -36,13 +36,14 @@
 }
 
 .game-detail__header {
-  padding: 10px 16px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
+  background-color: #f5f5f5;
 }
 
 .game-detail__icon {
-  width: 66px;
+  min-width: 66px;
   height: 66px;
   background-size: 100%;
   border-radius: 14px;
@@ -70,3 +71,36 @@
 .other-lang div {
   margin-right: 6px;
 }
+
+
+.app-info__section {
+  padding: 10px 16px;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-info__section > div { padding: 4px 0; }
+
+.app-info__key { color: #909396; margin-right: 10px; }
+.app-info__data { color: #000; }
+
+.app-info__pub {
+  display: flex;
+  align-items: center;
+}
+
+.app-info__pub > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-info__pub-detail { padding: 2px 0; }
+
+.company-detail__link {
+
+}
+
+
+.game-info__section { height: 1000px; }
