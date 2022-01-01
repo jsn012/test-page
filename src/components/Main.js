@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Main() {
   const navigate = useNavigate();
   const btnClick = () => {
-    navigate('/test-page/game/main')
+    navigate('/game/main')
   };
 
   return(
