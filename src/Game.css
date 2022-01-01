@@ -27,7 +27,7 @@
 }
 
 /* GameInfo.js */
-.game-info .game-img_main {
+.game-img__cover {
   width: 100%;
   aspect-ratio: 16/9;
   background-repeat: no-repeat;
@@ -35,14 +35,38 @@
   background-position: center;
 }
 
-.game-info .game-info__inner {
-  padding: 16px;
+.game-detail__header {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
 }
 
-.game-info .game-info__inner .game-icon {
-  width: 100px;
-  height: 100px;
+.game-detail__icon {
+  width: 66px;
+  height: 66px;
   background-size: 100%;
-  margin: 0 auto;
-  border-radius: 26px;
+  border-radius: 14px;
+}
+
+.game-detail__title {
+  margin-left: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-kr {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.other-lang {
+  display: flex;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+.other-lang div {
+  margin-right: 6px;
 }

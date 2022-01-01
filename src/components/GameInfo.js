@@ -12,26 +12,32 @@ function GameInfo() {
   const mainImg = { backgroundImage: `url(${process.env.PUBLIC_URL + gameListData[id.gameId].img[0]}`};
 
   return(
-    <div className="game-info">
-      <div className="game-img_main" style={mainImg}></div>
-      <div className="game-info__inner">
-        <div className="game-icon" style={gameIcon}>
+    <div className="game-detail">
+      <div className="game-img__cover" style={mainImg}></div>
+      <div className="game-detail__header">
+        <div className="game-detail__icon" style={gameIcon}>
         </div>
-        <div className="game-title">
-          <div className="game-title_kr">
-            {gameListData[id.gameId].titleKR}
+        <div className="game-detail__title">
+          <div className="game-title title-kr">
+            <h1>
+              <span>{gameListData[id.gameId].titleKR}</span>
+            </h1>
           </div>
-          <div className="game-title_cn">
-            {gameListData[id.gameId].titleCN}
-          </div>
-          <div className="game-title_en">
-            {gameListData[id.gameId].titleEN}
+          <div className="other-lang">
+            <div className="game-title title-cn">
+              <span>{gameListData[id.gameId].titleCN}</span>
+            </div>
+            <div className="game-title title-en">
+              <span>{gameListData[id.gameId].titleEN}</span>
+            </div>
           </div>
         </div>
-        <div className="game-video">
+      </div>
+      <div className="game-detail__main">
+        <div className="game-detail__video">
           {gameListData[id.gameId].video}
         </div>
-        <div className="game-info">
+        <div className="game-detail__info">
           {gameListData[id.gameId].info}
         </div>
       </div>

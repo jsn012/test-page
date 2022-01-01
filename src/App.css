@@ -3,3 +3,8 @@
 .App {
   font-family: 'Noto Sans KR', sans-serif;
 }
+
+.App-mobile {
+  max-width: 500px;
+  margin: 0 auto;
+}
