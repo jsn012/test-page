@@ -1,8 +1,6 @@
 import React from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 
-import '../Game.css';
-
 function GameMain() {
   return (
     <div className="game-main">

@@ -1,0 +1,42 @@
+/* nav */
+nav {
+  width: 100%;
+  max-width: 500px;
+  background-color: #00000000;
+  color: #000;
+  position: fixed;
+  top: 0;
+}
+
+.nav__inner {
+  width: 100%;
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__right {
+  display: flex;
+}
+
+.nav__btn {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 31px;
+  background-color: #0000009f;
+}
+
+.back-btn { margin-left: 16px; }
+.nav__right div:last-child { margin-right: 16px; }
+.nav__right div { margin-right: 14px; }
+
+.nav__btn svg { fill: #fff; }
+
+/* Footer */
+footer {
+  height: 100px;
+  background-color: #ccc;
+}
