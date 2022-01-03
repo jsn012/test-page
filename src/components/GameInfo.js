@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import gameListData from "../gameList.json";
+import 'swiper/css';
 
 function GameInfo() {
   const id = useParams().gameId;
@@ -81,13 +83,41 @@ function GameInfo() {
             <span className={`app-info__data ${releaseCheck(gameListData[id].releaseEn)}`}>EN</span>
           </div>
         </section>
-        <section className="game-info__section">
-          {/* <div className="game-info__video">
-            {gameListData[id].video}
-          </div> */}
-          <div className="game-info__info">
-            {gameListData[id].info}
-          </div>
+        <section className="game-detail__section detail-img">
+          <Swiper
+            spaceBetween={50}
+            slidesPerView={3}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>Slide 1</SwiperSlide>
+            <SwiperSlide>Slide 2</SwiperSlide>
+            <SwiperSlide>Slide 3</SwiperSlide>
+            <SwiperSlide>Slide 4</SwiperSlide>
+          </Swiper>
+        </section>
+        <section className="game-detail__section">
+          <header>
+            <div className="section__header-title">
+              <h2>소개</h2>
+            </div>
+          </header>
+          <main>
+            <div className="game-tag">
+              <Swiper
+                slidesPerView={'auto'}
+              >
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
+              </Swiper>
+            </div>
+            <div className="game-info__info">
+              {gameListData[id].info}
+            </div>
+          </main>
         </section>
       </main>
     </div>

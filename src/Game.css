@@ -106,4 +106,17 @@
 .release-on { color: #2815ce; }
 
 
-.game-info__section { height: 1000px; }
+.game-detail__section { padding: 10px 16px; }
+
+.game-detail__section header {
+  display: flex;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.game-tag { margin: 16px -16px; }
+
+.swiper-slide {
+  width: auto;
+} 
