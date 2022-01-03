@@ -112,6 +112,9 @@ function GameInfo() {
                 <SwiperSlide><a>Slide 1</a></SwiperSlide>
                 <SwiperSlide><a>Slide 1</a></SwiperSlide>
                 <SwiperSlide><a>Slide 1</a></SwiperSlide>
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
+                <SwiperSlide><a>Slide 1</a></SwiperSlide>
               </Swiper>
             </div>
             <div className="game-info__info">
