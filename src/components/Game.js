@@ -9,8 +9,8 @@ function Game() {
   return(
     <>
       <Routes>
-        <Route path="/main" element={<GameMain />} />
-        <Route path="/detail/:gameId" element={<GameInfo />} />
+        <Route path="/" element={<GameMain />} />
+        <Route path="/:gameId" element={<GameInfo />} />
       </Routes>
       <GameList />
     </>
@@ -23,7 +23,8 @@ function GameList() {
   let numList = [];
 
   const btnClick = (e) => {
-    navigate(`/game/detail/${e.target.value}`);
+    navigate(`/game/${e.target.value}`);
+    window.scrollTo({top: 0});
   };
 
   //게임 리스트 아이템 추가

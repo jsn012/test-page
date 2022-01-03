@@ -56,14 +56,14 @@
 }
 
 .title-kr {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .other-lang {
   display: flex;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #444;
 }
@@ -98,9 +98,12 @@
 
 .app-info__pub-detail { padding: 2px 0; }
 
-.company-detail__link {
+.in-pub { display: inline; }
+.non-pub { display: none; }
 
-}
+.non-release { color: #ddd; }
+.release-ready { color: #ce6815; }
+.release-on { color: #2815ce; }
 
 
 .game-info__section { height: 1000px; }

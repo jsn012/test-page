@@ -8,12 +8,30 @@ function GameInfo() {
 
   const gameIcon = { backgroundImage: `url(${process.env.PUBLIC_URL + gameListData[id].icon})` };
   const mainImg = { backgroundImage: `url(${process.env.PUBLIC_URL + gameListData[id].img[0]}`};
-  const pubDetailList = [
-    <PubDetail upperLang="CN" lowerLang="cn" data={gameListData[id].pubCN} key="pubCn" />,
-    <PubDetail upperLang="KR" lowerLang="kr" data={gameListData[id].pubKR} key="pubKr" />,
-    <PubDetail upperLang="JP" lowerLang="jp" data={gameListData[id].pubJP} key="pubJp" />,
-    <PubDetail upperLang="EN" lowerLang="en" data={gameListData[id].pubEN} key="pubEn" />
-  ];
+  const releaseCheck = (release) => {
+    if (release === 0) { return ('non-release'); }
+    else if (release === 1) { return ('release-on'); }
+    else if (release === 2) { return ('release-ready'); }
+  }
+  const pubDataCheck = (pubData) => {
+    if (
+      gameListData[id].pubCN === gameListData[id].pubKR &&
+      gameListData[id].pubKR === gameListData[id].pubJP &&
+      gameListData[id].pubJP === gameListData[id].pubEN
+    ) { return ('non-pub'); }
+    else { 
+      if (pubData !== "") { return ('in-pub'); }
+      else { return ('non-pub'); }
+    }
+  }
+  const pubDataAllCheck = () => {
+    if (
+      gameListData[id].pubCN === gameListData[id].pubKR &&
+      gameListData[id].pubKR === gameListData[id].pubJP &&
+      gameListData[id].pubJP === gameListData[id].pubEN
+    ) { return ('in-pub'); }
+    else { return ('non-pub'); }
+  }
 
   return(
     <div className="game-detail">
@@ -48,23 +66,19 @@ function GameInfo() {
           <div className="app-info__pub">
             <span className="app-info__key">Publisher</span>
             <div>
-              {gameListData[id].pubCN == gameListData[id].pubKR 
-                && gameListData[id].pubKR == gameListData[id].pubJP
-                && gameListData[id].pubJP == gameListData[id].pubEN ?
-                <PubAllDetail data={gameListData[id].pubCN} /> : pubDetailList
-              }
+              <PubDetail data={["CN", "cn", gameListData[id].pubCN, pubDataCheck(gameListData[id].pubCN)]} />
+              <PubDetail data={["KR", "kr", gameListData[id].pubKR, pubDataCheck(gameListData[id].pubKR)]} />
+              <PubDetail data={["JP", "jp", gameListData[id].pubJP, pubDataCheck(gameListData[id].pubJP)]} />
+              <PubDetail data={["EN", "en", gameListData[id].pubEN, pubDataCheck(gameListData[id].pubEN)]} />
+              <PubAllDetail data={gameListData[id].pubCN} style={pubDataAllCheck()} />
             </div>
           </div>
           <div className="app-info__release">
             <span className="app-info__key">Release</span>
-            <span className="app-info__data">
-              {gameListData[id].releaseCn == 1 ? "CN  " : null}
-              {gameListData[id].releaseKr == 1 ? "KR  " : null}
-              {gameListData[id].releaseJp == 1 ? "JP  " : null}
-              {gameListData[id].releaseEn == 1 ? "EN" : null}
-              {gameListData[id].releaseCn != 1 && gameListData[id].releaseKr != 1 && gameListData[id].releaseJp != 1 && gameListData[id].releaseEn != 1 ?
-                "-" : null}
-            </span>
+            <span className={`app-info__data ${releaseCheck(gameListData[id].releaseCn)}`}>CN </span>
+            <span className={`app-info__data ${releaseCheck(gameListData[id].releaseKr)}`}>KR </span>
+            <span className={`app-info__data ${releaseCheck(gameListData[id].releaseJp)}`}>JP </span>
+            <span className={`app-info__data ${releaseCheck(gameListData[id].releaseEn)}`}>EN</span>
           </div>
         </section>
         <section className="game-info__section">
@@ -82,11 +96,11 @@ function GameInfo() {
 
 function PubDetail(props) {
   return(
-    <div className={`app-info__pub-detail pub-${props.lowerLang}`} style={props.data == "" ? { display: 'none' } : { display: '' }}>
+    <div className={`app-info__pub-detail pub-${props.data[1]} ${props.data[3]}`}>
       <a href="" className="company-detail__link">
-        <span className="app-info__key key-pub">{props.upperLang}</span>
+        <span className="app-info__key key-pub">{props.data[0]}</span>
         <span className="app-info__data">
-          {props.data}
+          {props.data[2]}
         </span>
       </a>
     </div>
@@ -95,7 +109,7 @@ function PubDetail(props) {
 
 function PubAllDetail(props) {
   return(
-    <div className={`app-info__pub-detail pub-all`}>
+    <div className={`app-info__pub-detail pub-all ${props.style}`}>
       <a href="" className="company-detail__link">
         {/* <span className="app-info__key key-pub">ALL</span> */}
         <span className="app-info__data">
