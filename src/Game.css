@@ -1,4 +1,6 @@
 /* Game.js */
+.game-list { padding: 10px 16px; }
+
 .game-list ul {
   display: flex;
   flex-wrap: wrap;
@@ -73,15 +75,14 @@
 }
 
 
-.app-info__section {
-  padding: 10px 16px;
+.app-info {
   font-size: 12px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
 }
 
-.app-info__section > div { padding: 4px 0; }
+.app-info > div { padding: 4px 0; }
 
 .app-info__key { color: #909396; margin-right: 10px; }
 .app-info__data { color: #000; }
@@ -102,11 +103,11 @@
 .non-pub { display: none; }
 
 .non-release { color: #ddd; }
-.release-ready { color: #ce6815; }
-.release-on { color: #2815ce; }
+.release-on { color: #000; }
 
 
 .game-detail__section { padding: 10px 16px; }
+.app-info { padding: 10px 16px 2px 16px; }
 
 .game-detail__section header {
   display: flex;
@@ -115,10 +116,94 @@
   font-weight: 700;
 }
 
-.game-tag { margin: 16px -16px; }
+.swiper-slide { width: auto; }
+.section__swiper { margin: 16px -16px; }
 
-.swiper-slide {
-  width: auto;
-  margin-right: 6px;
-} 
+.game-tag .swiper-wrapper { height: 26px; }
+
+.swiper-slide { margin-right: 6px; } 
 .swiper-slide:first-child { margin-left: 16px; }
+.swiper-slide:last-child { margin-right: 16px; }
+
+.detail-img .swiper-slide { margin-right: 16px; }
+
+.game-tag .game-tag__router {
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: #f5f5f5;
+  color: #333333;
+  display: flex;
+  align-items: center;
+}
+
+.game-detail__info p {
+  font-size: 14px;
+  line-height: 22px;
+  white-space: pre-line;
+}
+
+.detail-img { padding: 0 16px; }
+.game-img { height: 160px; }
+
+/**/
+.game-link__nav {
+  margin: -8px -8px 10px -8px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.link-nav__wrap {
+  display: flex;
+  position: relative;
+}
+
+.link-nav__item {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.link-nav__line {
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  bottom: -1px;
+  left: 0;
+  margin: 0 calc(12.5% - 17px);
+  background-color: #444;
+  transition: left .5s;
+}
+
+/**/
+.download-link {
+  display: flex;
+  justify-content: center;
+}
+
+.download-link .link-button {
+  flex-basis: 33.33%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4px 8px 4px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+}
+.download-link .link-button:first-child { margin-left: 0; }
+.download-link .link-button:last-child { margin-right: 0; }
+
+.download-link .link-button a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

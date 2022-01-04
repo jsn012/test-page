@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+.no-drag {
+  -ms-user-select: none; 
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .App {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 .App-mobile {
+  min-width: 300px;
   max-width: 500px;
   margin: 0 auto;
 }
